@@ -22,6 +22,8 @@ namespace MD_Sponsors.Models
         public string ReferralCode { get; set; }
         [Required(ErrorMessage = "please upload an image to use for this product")]
         public string Image { get; set; }
+        [Required(ErrorMessage = "please upload a link to the product")]
+        public string LinkToProduct { get; set; }
 
     }
 }

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MD_Sponsors.Migrations
 {
     [DbContext(typeof(AdvertismentDbContext))]
-    [Migration("20210908001749_init")]
+    [Migration("20210908160833_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,10 @@ namespace MD_Sponsors.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("LinkToProduct")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -46,6 +50,17 @@ namespace MD_Sponsors.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Ad");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            Endorsment = "I love, love, love the rainbow leaves! I only wear VS leggings to run or just relax in. They are super comfy and never roll during workouts. This is the second pair of these leggings I have purchased.  They fit and feel great!",
+                            Image = "https://www.victoriassecret.com/p/760x1013/tif/0b/3d/0b3d5a483b5c4b9bab0815e5f1336309/111712650UNC_OM_F.jpg",
+                            LinkToProduct = "https://www.victoriassecret.com/us/vs/apparel-catalog/victoria-s-secret-total-knockout-by-victoria-s-secret-high-rise-tight-5000007478?genericId=11171265&choice=0UNC&size1=16&size1=16&cm_mmc=PLA-_-GOOGLE-_-VSD_GS+-+VS-+Top+Products+-+Apparel+Bottoms+-+P1-_-Type_Legging&gclid=CjwKCAjwvuGJBhB1EiwACU1AiVWV81AYw3dhwSknrq3s3oxU5OWSYmMBX0nkSI6OncF8nRwOPOSiqBoCQ50QAvD_BwE&gclsrc=aw.ds",
+                            Name = "Victorias Secret Leggings TYPE=AC32",
+                            ReferralCode = "DIAZDEALS"
+                        });
                 });
 #pragma warning restore 612, 618
         }
