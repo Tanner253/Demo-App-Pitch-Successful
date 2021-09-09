@@ -34,6 +34,17 @@ namespace MD_Sponsors.Data
                     ReferralCode = "DIAZDEALS",
                     LinkToProduct = "https://www.victoriassecret.com/us/vs/apparel-catalog/victoria-s-secret-total-knockout-by-victoria-s-secret-high-rise-tight-5000007478?genericId=11171265&choice=0UNC&size1=16&size1=16&cm_mmc=PLA-_-GOOGLE-_-VSD_GS+-+VS-+Top+Products+-+Apparel+Bottoms+-+P1-_-Type_Legging&gclid=CjwKCAjwvuGJBhB1EiwACU1AiVWV81AYw3dhwSknrq3s3oxU5OWSYmMBX0nkSI6OncF8nRwOPOSiqBoCQ50QAvD_BwE&gclsrc=aw.ds"
 
+                },
+                new Advertisment
+                {
+                    ID = 2,
+                    Name = "example product # 2",
+                    Endorsment = "This is my endorsment for this product its absolutley amazing in almost every way",
+                    Image = "IMAGE_URI_",
+                    ReferralCode = "SOMENUMBERSANDLETTERS",
+                    LinkToProduct = "This is the link to the product.... "
+
+
                 }
                 
             

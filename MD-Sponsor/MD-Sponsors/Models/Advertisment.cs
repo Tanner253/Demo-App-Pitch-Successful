@@ -23,6 +23,7 @@ namespace MD_Sponsors.Models
         [Required(ErrorMessage = "please upload an image to use for this product")]
         public string Image { get; set; }
         [Required(ErrorMessage = "please upload a link to the product")]
+        [Display(Name = "Product Link")]
         public string LinkToProduct { get; set; }
 
     }

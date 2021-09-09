@@ -54,7 +54,7 @@ namespace MD_Sponsors.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Endorsment,ReferralCode,Image")] Advertisment advertisment)
+        public async Task<IActionResult> Create([Bind("ID,Name,Endorsment,ReferralCode,Image,LinkToProduct")] Advertisment advertisment)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace MD_Sponsors.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Endorsment,ReferralCode,Image")] Advertisment advertisment)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Endorsment,ReferralCode,Image,LinkToProduct")] Advertisment advertisment)
         {
             if (id != advertisment.ID)
             {

@@ -3,14 +3,16 @@ using MD_Sponsors.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MD_Sponsors.Migrations
 {
     [DbContext(typeof(AdvertismentDbContext))]
-    partial class AdvertismentDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210909024637_init2")]
+    partial class init2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
