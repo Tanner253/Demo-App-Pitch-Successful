@@ -1,10 +1,9 @@
-# MD-Sponsors
-Mike Diaz - Redirect with endorsment
+# https://github.com/Tanner253/MikeDiazTrafficControl
 
 
 
 
-
+#Please SEE THE LINK ABOVE FOR CONTINUED DEVELOPMENT
 
 
 # Project Dino CMS
